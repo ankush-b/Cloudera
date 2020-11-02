@@ -47,9 +47,14 @@ sudo sysctl vm.swappiness=1
 ### Note : Now, save the instance to an image, call it “Cloudera Manager” Make sure to 
 check “No reboot”
 
+While creating more nodes you should set swapiness to 1 with use of boot script (Configuring instance details)
+
+#!/bin/bash
+sudo sysctl vm.swappiness=1
+
 
 -----*** Install and start CM ***-----
-
+ 
 SSH into cloudera-manager host
 
 
